@@ -1,0 +1,118 @@
+@import url('../common/var.less');
+
+.TabModule {
+    display: flex;
+
+    .common {
+        display: flex;
+        color: var(--t-subsidiary);
+    }
+
+    .item {
+        height: 80px;
+        justify-content: space-around;
+        font-size: 32px;
+        flex: 1;
+
+        .item-list {
+            display: flex;
+            align-items: center;
+
+            &.select {
+                font-size: 34px;
+                color: var(--t-title-body);
+                font-weight: 500;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background: var(--t-profit);
+                    border-radius: 3px;
+                    width: 36px;
+                    height: 6px;
+                }
+            }
+        }
+    }
+
+    .slotClass {
+        display: flex;
+        align-items: center;
+        width: 126px;
+        font-size: 32px;
+        color: var(--t-title-body);
+        justify-content: flex-end;
+    }
+
+    .second {
+        display: block;
+        font-size: 28px;
+        height: 100px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 20px;
+        overflow-x: auto;
+        white-space: nowrap;
+        overflow-y: hidden;
+
+        .item-list {
+            display: inline-block;
+            width: 160px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            border-radius: 30px;
+            background-color: var(--t-screen);
+
+            &:nth-child(n + 1) {
+                margin-right: 16px;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &.select {
+                background-color: var(--t-profit-light);
+                font-weight: 500;
+                color: var(--t-profit);
+            }
+        }
+    }
+
+    .three {
+        font-size: 28px;
+        color: var(--t-secondary);
+        padding: 0 4px;
+        width: 100%;
+        height: 58px;
+        background-color: var(--t-screen);
+        border-radius: 12px;
+        align-items: center;
+        flex: 0;
+        margin: 0 auto;
+
+        .item-list {
+            width: 172px;
+            height: 50px;
+            line-height: 50px;
+
+            &.select {
+                background: var(--t-card);
+                color: var(--t-title-body);
+                border-radius: 8px;
+            }
+        }
+    }
+
+    &.tabHeight {
+        height: 100px;
+        align-items: center;
+        text-align: center;
+    }
+}

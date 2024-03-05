@@ -1,24 +1,3 @@
-# m-ui
+# m-plug
 
-## Project setup
-```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+https://www.yuque.com/xiahou-b0zea/dg49nv/bkvnly62c37s7h5b

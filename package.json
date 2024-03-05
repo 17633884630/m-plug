@@ -1,14 +1,16 @@
 {
-  "name": "m-ui",
-  "version": "0.1.0",
-  "private": true,
+  "name": "m-plug",
+  "version": "0.0.1",
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name m-plug --dest lib packages/index.js"
   },
   "dependencies": {
     "core-js": "^3.8.3",
+    "mini-css-extract-plugin": "^2.8.1",
+    "postcss-pxtorem": "^6.1.0",
     "vue": "^2.6.14"
   },
   "devDependencies": {
@@ -19,6 +21,8 @@
     "@vue/cli-service": "~5.0.0",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
+    "less": "^4.2.0",
+    "less-loader": "^12.2.0",
     "vue-template-compiler": "^2.6.14"
   },
   "eslintConfig": {
@@ -39,5 +43,13 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "description": "m-plug",
+  "main": "lib/m-plug.umd.min.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "keywords": [],
+  "author": "xia-hou-dun",
+  "license": "ISC"
 }
