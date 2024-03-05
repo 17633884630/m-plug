@@ -1,6 +1,6 @@
 {
   "name": "m-plug",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "scripts": {
     "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
